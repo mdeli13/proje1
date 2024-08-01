@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: black;
+    position: relative;
+    background-image: url(pexels-minan1398-713664.jpg);
+    background-size: auto;
+}
+
+.hosgeldin-header {
+    background-color: #343a40;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+
+}
+
+.text-light {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.25rem;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #343a40;
+    background-color: transparent;
+
+}
+
+.nav-link {
+    margin-right: 10px;
+
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #343a40;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    background-color: transparent;
+
+}
+
+.btn:hover {
+    background-color: #495057;
+
+}
+
+.jumbotron {
+    height: 250px;
+    width: 100%;
+    align-self: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #ffffff;
+    background-color: transparent;
+
+
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+    border-style: none;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.container {
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    color: #fdfdfd;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Falling star animation */
+@keyframes fallingStar {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.star {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    animation: fallingStar 3s linear infinite;
+}
+
+.star:nth-child(2) {
+    left: 30%;
+    animation-duration: 2.5s;
+}
+
+.star:nth-child(3) {
+    left: 70%;
+    animation-duration: 2s;
+}
+
+.star:nth-child(4) {
+    left: 20%;
+    animation-duration: 1.8s;
+}
+
+.star:nth-child(5) {
+    left: 80%;
+    animation-duration: 2.2s;
+}

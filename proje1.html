@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Delibas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <header class="hosgeldin-header py-3">
+            <a class="navbar-brand text-center text-light" href="#">Welcome to My Website</a>
+        </header>
+    </div>
+    <div class="navbar nav-btn">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar nav-link" href="#" onclick="showSection('home')"><button type="button"
+                    class="btn btn-line-dark">Home</button></a>
+            <a class="navbar nav-link" href="#" onclick="showSection('about')"><button type="button"
+                    class="btn btn-line-dark">About</button></a>
+            <a class="navbar nav-link" href="#" onclick="showSection('contact')"><button type="button"
+                    class="btn btn-line-dark">Contact</button></a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div id="home" class="section active">
+            <div class="card">
+                <div class="jumbotron p-3 m-md-5 text-white rounded bg-transparant">
+                    <div class="col-md-6 px-0">
+                        <h1 class="display-4 font-italic">Hi! I'm Mustafa Delibas</h1>
+                        <p class="lead my-3">to get more information about me <a class="text-white font-weight-bold"
+                                href="#" onclick="showSection('about')">continue reading...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="section">
+            <div class="card">
+                <h1 class="header-title">About Me</h1>
+                <p class="sub-title">I was born in Ankara on 05.01.2004. I'm currently studying
+                    Computer Programming at
+                    Ondokuz Mayıs University. I was selected to the Erasmus+ Programme so I will study in Portugal in
+                    this fall semester. </p>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <div class="card">
+                <h1 class="header-title">Contact Information</h1>
+                <p class="sub-title">E-mail: mdelibaas1@gmail.com <br>Linkedin:<a
+                        href="https://www.linkedin.com/in/mustafa-delibas-a8336129b/">https://www.linkedin.com/in/mustafa-delibas-a8336129b/
+                        <br></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
